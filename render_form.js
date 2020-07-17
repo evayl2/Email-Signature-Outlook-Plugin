@@ -41,5 +41,5 @@ function getInfoFromCWS() {
         }
     }
 
-    document.getElementById("preview-area").value = Name + title;
+    document.getElementById("preview-area").value = '| ' + Name + ' |\n' + title;
 }
