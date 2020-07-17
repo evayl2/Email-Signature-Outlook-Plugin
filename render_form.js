@@ -21,8 +21,6 @@ function getOrientation() {
 
 function getInfoFromCWS() {
     orientation = getOrientation();
-
-    console.log(orientation);
     var x = document.getElementById("name").value;
     for (i of sampleInterns) {
         if (i.cwsId == x) {
@@ -34,4 +32,6 @@ function getInfoFromCWS() {
             break;
         }
     }
+
+    // document.getElementById("name-input-div").innerHTML +=
 }
