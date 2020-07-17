@@ -40,6 +40,8 @@ function getInfoFromCWS() {
             break;
         }
     }
+    //document.getElementById("preview-area").value = orientation;
 
-    document.getElementById("preview-area").value = '| ' + Name + ' |\n' + title + '\n' + team + '\n' + cat_email + '\n' + telephone;
+    document.getElementById("preview-area").value = Name + '\n' + title + ' | ' + team + '\n' + cat_email + '\n' + telephone;
+    
 }
