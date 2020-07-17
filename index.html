@@ -5,8 +5,80 @@
     <meta name="description" content="Email Signature Generator" />
     <meta name="author" content="Group 6" />
     <title>CatHack</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
-    Hello World.
+    <header class="border">
+      <img class="border-img" src="./assets/header.png" />
+    </header>
+    <h1>Email Signature Generator</h1>
+    <main>
+      <div id="input-fields">
+        <div id="selectable-features">
+          <form id="signature-style">
+            <h3>Signature Style:</h3>
+            <input
+              type="radio"
+              id="horizontal"
+              name="signature-style"
+              value="horizontal"
+            />
+            <label for="horizontal">Horizontal</label><br />
+            <input
+              type="radio"
+              id="vertical"
+              name="signature-style"
+              value="vertical"
+            />
+            <label for="vertical">Vertical</label><br />
+          </form>
+
+          <form id="optional-features">
+            <h3>Optional Features</h3>
+            <input
+              type="checkbox"
+              id="social-media"
+              name="optional-features"
+              value="social-media"
+            />
+            <label for="social-media">Caterpillar Social Media</label><br />
+            <input
+              type="checkbox"
+              id="address"
+              name="optional-features"
+              value="address"
+            />
+            <label for="address">Address</label><br />
+            <input
+              type="checkbox"
+              id="strengths-finder"
+              name="optional-features"
+              value="strengths-finder"
+            />
+            <label for="strengths-finder">Strengths Finder</label><br />
+          </form>
+        </div>
+        <div id="name-input-div">
+          <form id="name-input">
+            <label for="name"><h3>CWS ID:</h3></label><br />
+            <input type="text" id="name" name="name" placeholder="CWS ID" />
+          </form>
+          <button>Enter</button>
+        </div>
+      </div>
+      <div id="preview">
+        <label for="preview-area">Signature Preview</label>
+        <textarea
+          id="preview-area"
+          name="preview-area"
+          rows="4"
+          cols="50"
+          placeholder="A preview of your email signature will appear here."
+        ></textarea>
+      </div>
+    </main>
+    <footer class="border">
+      <img class="border-img" src="./assets/footer.png" />
+    </footer>
   </body>
 </html>
