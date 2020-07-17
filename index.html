@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="./styles.css" />
   </head>
   <body>
+    <script src = "render_form.js"></script>
     <header class="border">
       <img class="border-img" src="./assets/header.png" />
     </header>
@@ -64,7 +65,7 @@
             <label for="name"><h3>CWS ID:</h3></label><br />
             <input type="text" id="name" name="name" placeholder="CWS ID" />
           </form>
-          <button>Enter</button>
+          <button onclick="getInfoFromCWS()"> Enter </button>
         </div>
       </div>
       <div id="preview">
