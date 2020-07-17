@@ -40,8 +40,9 @@ function getInfoFromCWS() {
             break;
         }
     }
-    //document.getElementById("preview-area").value = orientation;
-
     document.getElementById("preview-area").value = Name + '\n' + title + ' | ' + team + '\n' + cat_email + '\n' + telephone;
+    if (document.getElementById("social-media").checked = true) {
+        document.getElementById("preview-area").value += '\n' + "Web: http://www.caterpillar.com/  | Follow Us On: Facebook | LinkedIn | Twitter | Instagram";
+    }
     
 }
